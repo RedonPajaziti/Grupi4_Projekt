@@ -35,5 +35,42 @@ void Ora::vendosKohen(){
 
 int main(){
 
+
+
+
+
+
+
+
+
+
+
+
+    
+    for(int i=0; i<=2; i++){
+        cin >> shkronja;
+
+        if(shkronja == 'X' || shkronja == 'x'){
+            i=5;
+            O1.shfaqOren();
+        }
+        else{
+            i=0;
+            switch(shkronja){
+                case 'S': 
+                case 's': O1.shtoSekond(); 
+                            break;
+                case 'M':
+                case 'm': O1.shtoMinute(); 
+                            break;    
+                case 'O':
+                case 'o': O1.shtoOre(); 
+                            break;    
+                default: cout << "Sheno shkronjen valide." << endl;
+                            break;                      
+            }
+        }
+
+    }
     return 0;
 }
