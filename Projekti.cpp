@@ -32,6 +32,25 @@ void Ora::vendosKohen(){
     }
 };
 
+void Ora::shtoSekond(){
+    sekonda++;
+    if(sekonda == 60){
+        sekonda = 0;
+        minuta++;
+        if ( minuta == 60){
+            minuta=0;
+            ora++;
+        }
+    }
+    else if(minuta == 60){
+        minuta = 0;
+        ora++;
+    }
+    else if(ora == 24 ){
+        ora=0;
+    }
+}
+
 
 int main(){
 
