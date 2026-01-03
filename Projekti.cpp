@@ -49,7 +49,26 @@ void Ora::shtoSekond(){
     else if(ora == 24 ){
         ora=0;
     }
-}
+};
+
+void Ora::shtoMinute(){
+    minuta++;
+    if ( minuta == 60){
+            minuta=0;
+            ora++;
+        }
+    else if( ora == 24 ){
+        ora=0;
+    }
+};
+
+void Ora::shtoOre(){
+    ora++;
+    if ( ora == 24){
+        ora = 0;
+        }
+};
+
 
 
 int main(){
